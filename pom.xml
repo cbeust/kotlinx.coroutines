@@ -26,8 +26,8 @@
     <version>0.7-beta-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Kotlin coroutines libraries</name>
-    <description>Basic implementation of coroutines libraries for Kotlin 1.1</description>
+    <description>Coroutines support libraries for Kotlin 1.1</description>
+
     <url>https://github.com/Kotlin/kotlinx.coroutines/</url>
 
     <licenses>
@@ -183,6 +183,9 @@
                             <urlSuffix>#L</urlSuffix>
                         </link>
                     </sourceLinks>
+                    <includes>
+                        <include>${project.basedir}/README.md</include>
+                    </includes>
                     <outputFormat>html</outputFormat>
                 </configuration>
             </plugin>

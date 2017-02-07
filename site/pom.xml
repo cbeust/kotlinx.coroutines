@@ -28,8 +28,6 @@
     <artifactId>kotlinx-coroutines-site</artifactId>
     <packaging>pom</packaging>
 
-    <name>Site for kotlin coroutines gh-pages</name>
-
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlinx</groupId>
