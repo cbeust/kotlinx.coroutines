@@ -1,0 +1,11 @@
+[kotlinx-coroutines-core](../../index.md) / [kotlinx.coroutines.experimental.channels](../index.md) / [SendChannel](index.md) / [offer](.)
+
+# offer
+
+`abstract fun offer(element: E): Boolean` [(source)](http://github.com/kotlin/kotlinx.coroutines/tree/master/kotlinx-coroutines-core/src/main/kotlin/kotlinx/coroutines/experimental/channels/Channel.kt#L63)
+
+Adds [element](offer.md#kotlinx.coroutines.experimental.channels.SendChannel$offer(kotlinx.coroutines.experimental.channels.SendChannel.E)/element) into this queue if it is possible to do so immediately without violating capacity restrictions
+and returns `true`. Otherwise, it returns `false` immediately
+or throws [ClosedSendChannelException](../-closed-send-channel-exception/index.md) if the channel [isClosedForSend](is-closed-for-send.md) *normally*.
+It throws the original [close](close.md) cause exception if the channel has *failed*.
+
